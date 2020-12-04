@@ -13,7 +13,7 @@ steps:
 - task: ShellScript@2
   inputs:
     scriptPath: './test.sh'
-    args: $(COMMIT_VERSION)
+    args: $(commit_version)
     #disableAutoCwd: false # Optional
     #cwd: '' # Optional
     #failOnStandardError: false
