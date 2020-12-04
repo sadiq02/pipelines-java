@@ -6,10 +6,21 @@
 trigger:
 - none
 
+
+
 pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+
+- task: ShellScript@2
+  inputs:
+    scriptPath: './test.sh'
+    #args: '' # Optional
+    #disableAutoCwd: false # Optional
+    #cwd: '' # Optional
+    #failOnStandardError: false
+
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
