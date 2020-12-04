@@ -18,7 +18,7 @@ steps:
 - task: ShellScript@2
   inputs:
     scriptPath: './test.sh'
-    args: ${{ variables.one }}
+    args: $[variables.version]
     #disableAutoCwd: false # Optional
     #cwd: '' # Optional
     #failOnStandardError: false
