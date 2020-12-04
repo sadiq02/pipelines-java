@@ -6,10 +6,6 @@
 trigger:
 - none
 
-variables:
-- name: one
-  value: initialValue
-
 pool:
   vmImage: 'ubuntu-latest'
 
