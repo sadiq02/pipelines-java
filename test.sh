@@ -1,1 +1,3 @@
-echo Hello world
+Username=$1
+
+echo $1
