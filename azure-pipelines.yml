@@ -18,7 +18,7 @@ steps:
 
    set MyCustomVar= %TestVar:~0,7%
 
-   echo %MyCustomVar%
+   echo MyCustomVar
 
   displayName: 'Command Line Script'
   
