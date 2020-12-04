@@ -11,6 +11,17 @@ pool:
 
 steps:
 
+- script: |
+   echo $(Build.SourceVersion)
+
+   set  TestVar=$(Build.SourceVersion)
+
+   set MyCustomVar= %TestVar:~0,7%
+
+   echo %MyCustomVar%
+
+  displayName: 'Command Line Script'
+  
 - task: ShellScript@2
   inputs:
     scriptPath: './test.sh'
