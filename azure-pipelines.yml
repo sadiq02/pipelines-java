@@ -14,11 +14,11 @@ steps:
 - script: |
    echo $(Build.SourceVersion)
 
-   set  TestVar=$(Build.SourceVersion)
+   TestVar=$(Build.SourceVersion)
 
-   set MyCustomVar= %TestVar:~0,7%
+   MyCustomVar= $(TestVar):~0,7%
 
-   echo MyCustomVar
+   echo $(MyCustomVar)
 
   displayName: 'Command Line Script'
   
